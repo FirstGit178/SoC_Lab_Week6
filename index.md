@@ -45,7 +45,7 @@ Describe the synthesis and implementation processes. Consider including 1/2 usef
 
 ### **Demonstration**
 Perhaps add a picture of your demo. 
-<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/IMG_20251110_171335.jpg">
+<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/main/docs/assets/images/IMG_20251110_171335.jpg">
 
 Guideline: 1/2 sentences.
 
