@@ -6,17 +6,30 @@ categories: demo
 ---
 
 Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences. 
-
+# *The TV Screen LIES....!!!!*
+Taking advantage of the refresh rate of the screen, essentially fooling our brains into thinking we see a complete image when actually we are watching a trace of RGB pixels turning on and off at different rates generating different colours which collectivly begin to build an image as the trace makes its way across and down the screen line by line until it gets to the end and returns to the start to repeat the process 
 # This Web page is documenting the progress of my FPGA VGA Project
 
-For my FPGA VGA project, initially I set up the project with the downloaded template files which displayed Colours cycling and then for the second step to display colour stripes through the VGA I added rows and coloumns to the stripes Verilog code . 
+For my FPGA VGA project, initially I set up the project with the downloaded template files which displayed Colours cycling 
+
+<"insert image">  
+and then progressed to the second step to display colour stripes through the VGA I added rows and coloumns to the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
 
 <img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/VGACodeAlterationFMC.png">
+
 ## **Template VGA Design**
 ### **Project Set-Up**
-Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
+Summarise the project set-up and design flow. 
+This FPGA VGA Project is showning me at a code level how VGA displays operate. Taking advantage of the refresh rate of the screen, essentially fooling our brains into thinking we see a complete image when actually we are watching a trace of RGB pixels turning on and off at different rates generating different colours which collectivly begin to build an image as the trace makes its way across and down the screen line by line until it gets to the end and returns to the start to repeat the process 
 
+
+Guideline 1 short paragraph.
+
+
+ 
 <img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/VGAPrjSumFMC.png">
+
+**Project Summary window**
 
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
