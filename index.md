@@ -7,7 +7,7 @@ categories: demo
 
 Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences. 
 # *The TV Screen LIES....!!!!*
-Taking advantage of the refresh rate of the screen, essentially fooling our brains into thinking we see a complete image when actually we are watching a trace of RGB pixels turning on and off at different rates generating different colours which collectivly begin to build an image as the trace makes its way across and down the screen line by line until it gets to the end and returns to the start to repeat the process 
+Taking advantage of the refresh rate of the screen, essentially fooling our brains into thinking we see a complete image when actually we are watching a trace of RGB pixels turning on and off at different rates to generate varying colours which then as the trace makes its way across and down the screen, line by line until it gets to the end. Then returns to the start to repeat the process again collectivly building an image
 # This Web page is documenting the progress of my FPGA VGA Project
 
 For my FPGA VGA project, initially I set up the project with the downloaded template files which displayed Colours cycling 
