@@ -32,7 +32,10 @@ Guideline 1 short paragraph.
 **Project Summary window**
 
 ### **Template Code**
-Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
+Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, 
+
+Verilog code templates are to display a colourCycle screen wash and then colours in rows and then in coloumns 
+consider including screenshot(s).
 
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
