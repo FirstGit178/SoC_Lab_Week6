@@ -44,7 +44,10 @@ Explain the simulation process. Reference any important details, include a well-
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
 
 ### **Demonstration**
-Perhaps add a picture of your demo. Guideline: 1/2 sentences.
+Perhaps add a picture of your demo. 
+<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/IMG_20251110_171335.jpg">
+
+Guideline: 1/2 sentences.
 
 ## **My VGA Design Edit**
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
