@@ -27,7 +27,7 @@ Pixels don’t “turn on and off at different rates” to create colors; instea
 
 For my FPGA VGA project, initially I set up the project with the downloaded template files which displayed Colours cycling 
 
-<"insert image">  
+<"insert image/video">  
 and then progressed to the second step to display colour stripes through the VGA I added rows and coloumns to the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
 
 <img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/VGACodeAlterationFMC.png">
