@@ -7,7 +7,22 @@ categories: demo
 
 Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences. 
 # *The TV Screen LIES....!!!!*
-Taking advantage of the refresh rate of the screen, essentially fooling our brains into thinking we see a complete image when actually we are watching a trace of RGB pixels turning on and off at different rates to generate varying colours which then as the trace makes its way across and down the screen, line by line until it gets to the end. Then returns to the start to repeat the process again collectivly building an image
+The TV screen lies by fooling our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s sub-pixels (R, G, B) with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen, Earlier display technologies (like CRTs) literally scanned line-by-line until it gets to the end then returns to the start to repeat the process again collectivly building an image. 
+
+Modern LCD/OLED screens do not draw the image as a moving “trace” like CRTs did.
+They refresh the entire pixel grid each frame.
+
+##TRUE       
+The image on a screen is created by pixels turning on and off rapidly.
+The refresh rate influences how smooth motion appears.
+Earlier display technologies (like CRTs) literally scanned line-by-line.
+
+##NOT TRUE        
+Modern LCD/OLED screens do not draw the image as a moving “trace” like CRTs did.
+They refresh the entire pixel grid each frame, even though it still happens at the refresh rate.
+
+Pixels don’t “turn on and off at different rates” to create colors; instead, each pixel’s sub-pixels (R, G, B) have intensities that change per frame.
+
 # This Web page is documenting the progress of my FPGA VGA Project
 
 For my FPGA VGA project, initially I set up the project with the downloaded template files which displayed Colours cycling 
