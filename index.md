@@ -38,12 +38,17 @@ Summarise the project set-up and design flow.
 This FPGA VGA Project is showing me at a code level how VGA displays operate. Through the refresh rate of the screen, it is essentially fooling our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s sub-pixels (R, G, B) with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen to the end and returns to the start to repeat the process 
 allowing us to see a complete image.
 
-Guideline 1 short paragraph.
+# Guideline 1 short paragraph.
 
-<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/Architecture Diagram.png">
-<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/VGAPrjSumFMC.png">
+
+**Architecture Diagram**
+
+<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/main/docs/assets/images/Architecture%20Diagram.png">
 
 **Project Summary window**
+<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/VGAPrjSumFMC.png">
+
+
 
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, 
