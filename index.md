@@ -35,13 +35,12 @@ and then progressed to the second step to display colour stripes through the VGA
 ## **Template VGA Design**
 ### **Project Set-Up**
 Summarise the project set-up and design flow. 
-This FPGA VGA Project is showning me at a code level how VGA displays operate. Taking advantage of the refresh rate of the screen, essentially fooling our brains into thinking we see a complete image when actually we are watching a trace of RGB pixels turning on and off at different rates generating different colours which collectivly begin to build an image as the trace makes its way across and down the screen line by line until it gets to the end and returns to the start to repeat the process 
-
+This FPGA VGA Project is showing me at a code level how VGA displays operate. Through the refresh rate of the screen, it is essentially fooling our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s sub-pixels (R, G, B) with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen to the end and returns to the start to repeat the process 
+allowing us to see a complete image.
 
 Guideline 1 short paragraph.
 
-
- 
+<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/Architecture Diagram.png">
 <img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/VGAPrjSumFMC.png">
 
 **Project Summary window**
