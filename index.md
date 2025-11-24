@@ -45,6 +45,9 @@ allowing us to see a complete image.
 
 <img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/main/docs/assets/images/ArchitectureDiagramFMC.png">
 
+**Architecture Diagram**
+<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/main/docs/assets/images/ArchitectureDiagram.png">
+
 **Project Summary window**
 <img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/VGAPrjSumFMC.png">
 
