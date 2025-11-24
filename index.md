@@ -72,6 +72,8 @@ Guideline: 1/2 sentences.
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
 
 ### **Code Adaptation**
+
+Adapting the code to display my design I thouhjt at first would bwe easy buyt once i started i soon realised this is not the case, the delay while waiting for the program to generate the bitstream which must be done before testing the new code each time. Its a big insentive to get the code correct before testing
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
 
 ### **Simulation**
