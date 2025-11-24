@@ -73,7 +73,9 @@ Introduce your own design idea. Consider how complex/achievabble this might be o
 
 ### **Code Adaptation**
 
-Adapting the code to display my design I thouhjt at first would bwe easy buyt once i started i soon realised this is not the case, the delay while waiting for the program to generate the bitstream which must be done before testing the new code each time. Its a big insentive to get the code correct before testing
+Adapting the code to display my design I thouhjt at first would bwe easy buyt once i started i soon realised this is not the case, the delay while waiting for the program to generate the bitstream which must be done before testing the new code each time. Its a big insentive to get the code correct before testing. 
+many times I thought I had it all figured out and then when I program the board its not what i expected.
+
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
 
 ### **Simulation**
