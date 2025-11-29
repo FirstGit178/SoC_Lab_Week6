@@ -79,12 +79,16 @@ I decided to use the default section to colour the background and left my icon e
 
 ### **Code Adaptation**
 
-Adapting the code to display my design I thouhjt at first would bwe easy buyt once i started i soon realised this is not the case, the delay while waiting for the program to generate the bitstream which must be done before testing the new code each time. Its a big insentive to get the code correct before testing. 
-many times I thought I had it all figured out and then when I program the board its not what I expected.
+Adapting the code to display my design I thought at first would be easy 
+# Yeah like binary rain <insertImage>
+but once I started I soon realised this is not the case, It is a big insentive to get the code correct before testing it on the board. Due to the delay when waiting for the program to generate the bitstream which must be done before testing the new code each time.
+many times I thought I had a design all figured out and then when I program the board the result was not what I expected.
 
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
 
 ### **Simulation**
+As Ecah pixel has to be covered by code in regards to its colour and I was running behind with my progress due to missing a coiuple of labs I decided to use the default section to colour the background and left my icon essentially floating in the centre of the screen, as whatever colour you decide to make the default, will colour any pixel not covered by the code. as this saved time rather than trying to write each section individually.
+
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
 
 ### **Synthesis**
