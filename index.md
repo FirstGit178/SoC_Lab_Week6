@@ -74,7 +74,8 @@ Guideline: 1/2 sentences.
 ## **My VGA Design Edit**
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
 
-I decided to use the default section to colour the background in my icon as apposed to trying to write each section individually.
+As Ecah pixel has to be covered by code in regards to its colour and I was running behind with my progress due to missing a coiuple of labs 
+I decided to use the default section to colour the background and left my icon essentially floating in the centre of the screen, as whatever colour you decide to make the default, will colour any pixel not covered by the code. as this saved time rather than trying to write each section individually.
 
 ### **Code Adaptation**
 
@@ -91,6 +92,7 @@ Describe the synthesis & implementation outputs for your design, are there any d
 
 ### **Demonstration**
 <img src="/docs/assets/images/LegoHead.jpg"> I didn't get my design finisherd but I learned quite a bit about how VGA actually works at a coding level.
+
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
 
 ## **More Markdown Basics**
