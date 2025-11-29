@@ -79,8 +79,9 @@ I decided to use the default section to colour the background and left my icon e
 
 ### **Code Adaptation**
 
-Adapting the code to display my design I thought at first would be easy 
-# Yeah like binary rain <insertImage>
+Adapting the code to display my design I thought at first would be easy................... 
+# *Yeah, should be easy and I'll do something..... like my lecturer's binary rain* 
+<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/main/docs/assets/images/DigitalRainDev1.png">
 but once I started I soon realised this is not the case, It is a big insentive to get the code correct before testing it on the board. Due to the delay when waiting for the program to generate the bitstream which must be done before testing the new code each time.
 many times I thought I had a design all figured out and then when I program the board the result was not what I expected.
 
