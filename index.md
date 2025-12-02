@@ -31,7 +31,7 @@ For my FPGA VGA project, initially I set up the project with the downloaded temp
 and then progressed to the second step to display colour stripes through the VGA I added rows and coloumns to the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
 
 <img src="docs/assets/images/IMG_20251020_165419.jpg">
-<img src="https://raw.githubusercontent.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/VGACodeAlterationFMC.png">
+<img src="docs/assets/images/VGACodeAlterationFMC.png">
 
 ## **Template VGA Design**
 ### **Project Set-Up**
@@ -43,16 +43,16 @@ allowing us to see a complete image.
 
 
 **Architecture Diagram**
-<img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSrcs.png">
-<img src="https://raw.githubusercontent.com/FirstGit178/SoC_Lab_Week6/blob/main/docs/assets/images/ArchitectureDiagramFMC.png">
+<img src="docs/assets/images/VGAPrjSrcs.png">
+<img src="docs/assets/images/ArchitectureDiagramFMC.png">
 
 
 
 **Architecture Diagram**
-<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/main/docs/assets/images/ArchitectureDiagram.png">
+<img src="docs/assets/images/ArchitectureDiagram.png">
 
 **Project Summary window**
-<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/VGAPrjSumFMC.png">
+<img src="docs/assets/images/VGAPrjSumFMC.png">
 
 
 
@@ -70,7 +70,7 @@ Describe the synthesis and implementation processes. Consider including 1/2 usef
 
 ### **Demonstration**
 Here is a picture of my demo of a Flag. 
-<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/main/docs/assets/images/IMG_20251110_171335.jpg">
+<img src="docs/assets/images/IMG_20251110_171335.jpg">
 
 Guideline: 1/2 sentences.
 
@@ -84,7 +84,7 @@ I decided to use the default section to colour the background and left my icon e
 
 Adapting the code to display my design I thought at first would be easy................... 
 # *Yeah, should be easy and I'll do something..... like my lecturer's binary rain* 
-<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/main/docs/assets/images/DigitalRainDev1.png">
+<img src="docs/assets/images/DigitalRainDev1.png">
 but once I started I soon realised this is not the case, It is a big insentive to get the code correct before testing it on the board. Due to the delay when waiting for the program to generate the bitstream which must be done before testing the new code each time.
 many times I thought I had a design all figured out and then when I program the board the result was not what I expected.
 
@@ -99,7 +99,7 @@ Show how you simulated your own design. Are there any things to note? Demonstrat
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 
 ### **Demonstration**
-<img src="/docs/assets/images/LegoHead.jpg"> I didn't get my design finisherd but I learned quite a bit about how VGA actually works at a coding level.
+<img src="docs/assets/images/LegoHead.jpg"> I didn't get my design finisherd but I learned quite a bit about how VGA actually works at a coding level.
 
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
 
