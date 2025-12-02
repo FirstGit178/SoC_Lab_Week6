@@ -30,7 +30,6 @@ For my FPGA VGA project, initially I set up the project with the downloaded temp
 <"insert image/video">  
 and then progressed to the second step to display colour stripes through the VGA I added rows and coloumns to the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
 
-<img src="docs/assets/images/IMG_20251020_165419.jpg">
 <img src="docs/assets/images/VGACodeAlterationFMC.png">
 
 ## **Template VGA Design**
