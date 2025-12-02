@@ -43,7 +43,7 @@ allowing us to see a complete image.
 
 **Architecture Diagram**
 
-<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/main/docs/assets/images/ArchitectureDiagramFMC.png">
+<img src="https://rawgithubusercontent.com/FirstGit178/SoC_Lab_Week6/blob/main/docs/assets/images/ArchitectureDiagramFMC.png">
 
 **Architecture Diagram**
 <img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/main/docs/assets/images/ArchitectureDiagram.png">
