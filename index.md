@@ -43,7 +43,7 @@ allowing us to see a complete image.
 
 
 **Architecture Diagram**
-<img src="docs/assets/images/VGAPrjSrcs.png">
+
 <img src="docs/assets/images/ArchitectureDiagramFMC.png">
 
 
