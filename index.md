@@ -44,7 +44,7 @@ allowing us to see a complete image.
 **Architecture Diagram**
 <img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSrcs.png">
 <img src="https://raw.githubusercontent.com/FirstGit178/SoC_Lab_Week6/blob/main/docs/assets/images/ArchitectureDiagramFMC.png">
-<img src="https://raw.githubusercontent.com/FirstGit178/SoC_Lab_Week6/main/docs/assets/images/ArchitectureDiagramFMC.png">
+
 
 
 **Architecture Diagram**
