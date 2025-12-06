@@ -7,10 +7,9 @@ categories: demo
 
 Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences. 
 # *The TV Screen LIES....!!!!*
-The TV screen lies by fooling our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s sub-pixels (R, G, B) with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen, Earlier display technologies (like CRTs) literally scanned line-by-line until it gets to the end then returns to the start to repeat the process again collectivly building an image. 
+Okay—maybe “lies” is a bit dramatic. But the screen does fool our brains. What we see as a complete, stable image is really the result of thousands or millions of pixels whose red, green, and blue sub-pixels change intensity every frame. As these rapid changes play out across the screen, our brains blend them into smooth motion and solid colors.
 
-Modern LCD/OLED screens do not draw the image as a moving “trace” like CRTs did.
-They refresh the entire pixel grid each frame.
+Older display technologies like CRTs took this even further: they literally scanned the image line-by-line from top to bottom, then jumped back to the start to repeat the process. Each pass built up the image so quickly that persistence of vision made it appear continuous.
 
 ##TRUE       
 The image on a screen is created by pixels turning on and off rapidly.
