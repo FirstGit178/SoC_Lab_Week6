@@ -84,8 +84,9 @@ I decided to use the default section to colour the background and left my icon e
 
 ### **Code Adaptation**
 
-Adapting the code to display my designs at first I thought would be easy................... 
-# *Yeah, should be easy and I'll do something..... like my lecturer's binary rain* 
+Adapting the code to display my designs at first I thought would be easy... 
+
+*Yeah, should be easy and I'll do something like..... my lecturer's binary rain* 
 <img src="docs/assets/images/DigitalRainDev1.png">
 
 but once I started I quickly realised it wasn’t. Because generating the bitstream takes time, every test requires patience, which makes it important to get the code right before attempting to program the board. Many times I thought I had solved the problem, only to find that the hardware produced something completely unexpected.
