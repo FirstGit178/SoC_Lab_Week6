@@ -6,15 +6,15 @@ categories: demo
 ---
  
 # *The TV Screen LIES....!!!!*
-Okay maybe “lies” is a bit dramatic. But the screen does fool our brains. What we see as a complete, stable image is really the result of thousands or millions of pixels whose red, green, and blue sub-pixels change intensity every frame. As these rapid changes play out across the screen, our brains blend them into smooth motion and solid colors.
+Okay maybe “lies” is a bit dramatic. But the screen does fool our brains. What we see as a complete, stable image is really the result of thousands of pixels whose red, green, and blue sub-pixels change intensity every frame. As these rapid changes play out across the screen, our brains blend them into smooth motion and solid colors.
 
-Older display technologies like CRTs took this even further, they literally scanned the image line by line from top to bottom, then jumped back to the start to repeat the process. Each pass built up the image so quickly that persistence of vision made it appear continuous.
+Older display technologies like CRTs took this even further, they literally scanned the image line by line from top to bottom, then jumps back to the start to repeat the process. Each pass built up the image so quickly that the way frames blur together made it appear continuous.
 
 
 
-# This Web page is documenting the progress of my FPGA VGA Project
+# This webpage is documenting the progress of my FPGA VGA Project
 
-For my FPGA VGA project, initially I set up the project with the downloaded template files which displayed Colours cycling 
+For my FPGA VGA project, initially I set up the project with the downloaded template files which displayed colours cycling 
 
 # <"insert image/video"> (remove audio before adding) 
 
@@ -27,7 +27,7 @@ and then progressed to the second step to display colour stripes through the VGA
 BASYS3 Develoment Board
 <img src="docs/assets/images/BASYS3.jpg">
 
-This FPGA VGA Project is showing me at a code level how VGA displays operate. Through the refresh rate of the screen, it is essentially fooling our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s subpixels RGB with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen to the end and returns to the start to repeat the process allowing us to see a complete image.
+This FPGA VGA Project is showing me at code level how VGA displays operate. Through the refresh rate of the screen, it is essentially tricks our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s subpixels red, green and blue(RGB) with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen to the end and returns to the start to repeat the process allowing us to see a complete image.
 
 
 **Architecture Diagram**
@@ -79,33 +79,34 @@ I started with the supplied stripes template and modified it to show a different
 
 By adjusting the column ranges and their RGB values, the template now displays a simple tricolour flag rather than the default design. Working through this made it clear to me how the pixel-generation logic works — each pixel’s colour is determined by its position, so changing those ranges or intensity values immediately changes what appears on screen(see below).
 
-if
+'if'
 
-(col >= 11'd0 && col <11'd213) begin
+'(col >= 11'd0 && col <11'd213) begin'
 
-      red_next   <= 4'b0000;      
-      green_next <= 4'b1111;
-      blue_next  <= 4'b0000;
+     ' red_next   <= 4'b0000;'      
+      'green_next <= 4'b1111;
+     ' blue_next  <= 4'b0000;'
       
-   end
+   'end'
    
-   else if
+   'else if'
    
-   (col >= 11'd213 && col < 11'd426) begin
+   '(col >= 11'd213 && col < 11'd426) begin'
    
-      red_next   <= 4'b1111;
-      green_next <= 4'b1111;
-      blue_next  <= 4'b1111;
-   end
+      'red_next   <= 4'b1111;'
+      'green_next <= 4'b1111;'
+      'blue_next  <= 4'b1111;'
+   'end'
    
-   else if
+   'else if'
    
-   (col >= 11'd426 && col < 11'd640) begin
+   '(col >= 11'd426 && col < 11'd640) begin'
    
-      red_next   <= 4'b1111;
-      green_next <= 4'b0111;
-      blue_next  <= 4'b0000;
-   end
+      'red_next   <= 4'b1111;'
+      'green_next <= 4'b0111;'
+      'blue_next  <= 4'b0000;'
+   'end'
+
 
 ### **Simulation**
 
@@ -118,16 +119,15 @@ if
 ### **Demonstration**
 <img src="docs/assets/images/LegoHead.jpg"> I didn't get my design finisherd but I learned quite a bit about how VGA actually works at a coding level.
 
-I almost did though and if I had it would have looked something like this
+I almost did though and if I had it would have looked something like this....
 <img src="docs/assets/images/LegoSmile.jpg">
-# (If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.)
 
-##( **More Markdown Basics**)
-# (This is a paragraph. Add an empty line to start a new paragraph.)
 
-(Font can be emphasised as *Italic* or **Bold**.)
 
-Code can be highlighted by using `backticks`.
+
+
+
+
 
 Hyperlinks look like this: [GitHub Help](https://help.github.com/).
 
