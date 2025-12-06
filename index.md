@@ -71,7 +71,7 @@ During synthesis, Vivado checks the design for timing constraints, optimises the
 The implementation stage then places and routes the design, ensuring that the VGA pixel clock and sync signal timing meet the required specifications. Once the design passes these checks, the bitstream is generated and programmed onto the FPGA board, where the VGA output can be tested in real time on the monitor. This process confirms that the simulated behaviour will be correctly displayed on the physical hardware.
 
 ### **Demonstration**
-Here is a picture of my demo of a Flag. 
+This demo displays the Irish Flag, which I selected as the design pattern. 
 <img src="docs/assets/images/IMG_20251110_171335.jpg">
 
 (Guideline: 1/2 sentences.)
