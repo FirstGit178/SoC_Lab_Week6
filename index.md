@@ -17,14 +17,16 @@ Older display technologies like CRTs took this even further, they literally scan
 
 For my FPGA VGA project, initially I set up the project with the downloaded template files which displayed Colours cycling 
 
-<"insert image/video"> (remove audio before adding) 
+# <"insert image/video"> (remove audio before adding) 
+
 and then progressed to the second step to display colour stripes through the VGA I added rows and coloumns to the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
 
 <img src="docs/assets/images/VGACodeAlterationFMC.png">
 
 ## **Template VGA Design**
 ### **Project Set-Up**
-(Summarise the project set-up and design flow.CHECKED) 
+# (Summarise the project set-up and design flow.CHECKED) 
+
 This FPGA VGA Project is showing me at a code level how VGA displays operate. Through the refresh rate of the screen, it is essentially fooling our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s subpixels RGB with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen to the end and returns to the start to repeat the process allowing us to see a complete image.
 
 # (Guideline 1 short paragraph.)
@@ -45,7 +47,8 @@ This FPGA VGA Project is showing me at a code level how VGA displays operate. Th
 
 
 ### **Template Code**
-(Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs,CHECKED) 
+# (Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs,CHECKED) 
+
 The Verilog code templates are designed to generate visual patterns, including a colour cycle screen wash, horizontal colour rows, and vertical columns. These signals follow the standard VGA timing scheme, which scans the screen left to right and top to bottom. The pixel coordinates are then passed to VGA Top, which determines what colour should be displayed at each point on the screen. 
 
 One template produces a colour cycle wash, demonstrating how the pixel RGB values can be changed frame by frame and in turn the displayed colour changes. Other templates generate colours in horizontal rows and vertical columns. In each case the colour selection logic uses the pixel coordinates from the VGA controller to decide which colour to output, allowing simple patterns to be drawn without the need to store a full frame buffer.
@@ -67,7 +70,7 @@ Here is a picture of my demo of a Flag.
 (Guideline: 1/2 sentences.)
 
 ## **My VGA Design Edit**
-(Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).)
+# (Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).)
 
 As Ecah pixel has to be covered by code in regards to its colour and I was running behind with my progress due to missing a couple of labs 
 I decided to use the default section to colour the background and left my icon essentially floating in the centre of the screen, as whatever colour you decide to make the default, will colour any pixel not covered by the code. as this saved time rather than trying to write each section individually.
@@ -82,7 +85,7 @@ many times I thought I had a design all figured out but when I programmed the bo
 
 but once I started I soon realised this is not the case, It is a big insentive to get the code correct before each test becomes a strong incentive to get the code right before trying it on the board. Many times I thought I had the design completely figured out, but when I programmed the board, the result was nothing like what I expected.
 
-(Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.)
+# (Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.)
 
 ### **Simulation**
 Simulation is used to verify the VGA clock timing generator and colour pattern modules before programming the FPGA. The Verilog design is run in a waveform simulator, where the horizontal and vertical sync pulses, pixel coordinates, and colour outputs can be observed to see how they interact over time. This allows any timing errors or incorrect colour selection to be identified early, providing visual confirmation that the design follows the expected VGA timing sequence.
@@ -91,18 +94,18 @@ The simulation also demonstrates how the colour pattern logic responds to changi
 
 Unfortunately, I was running behind with my progress due to missing a couple of labs, to try and save time I skipped straight to full implementation and programmed the board for testing. I used the default case to apply colour to any pixel not explicitly driven by the pattern logic, avoiding the need to manually define each region of the background. This allowed me to focus on colouring my icon in the centre of the screen.
 
-(Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.CHECKED)
+# (Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.CHECKED)
 
 ### **Synthesis**
-(Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.)
+# (Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.)
 
 ### **Demonstration**
 <img src="docs/assets/images/LegoHead.jpg"> I didn't get my design finisherd but I learned quite a bit about how VGA actually works at a coding level.
 
-(If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.)
+# (If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.)
 
 ##( **More Markdown Basics**)
-(This is a paragraph. Add an empty line to start a new paragraph.)
+# (This is a paragraph. Add an empty line to start a new paragraph.)
 
 (Font can be emphasised as *Italic* or **Bold**.)
 
