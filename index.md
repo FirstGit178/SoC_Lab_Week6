@@ -4,8 +4,7 @@ title: FPGA VGA Driver Project
 tags: fpga vga verilog
 categories: demo
 ---
-
-(Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences.CHECKED) 
+ 
 # *The TV Screen LIES....!!!!*
 Okay maybe “lies” is a bit dramatic. But the screen does fool our brains. What we see as a complete, stable image is really the result of thousands or millions of pixels whose red, green, and blue sub-pixels change intensity every frame. As these rapid changes play out across the screen, our brains blend them into smooth motion and solid colors.
 
@@ -25,7 +24,7 @@ and then progressed to the second step to display colour stripes through the VGA
 
 ## **Template VGA Design**
 ### **Project Set-Up**
-# (Summarise the project set-up and design flow.CHECKED) 
+<img src="docs/assets/images/BASYS3.png">
 
 This FPGA VGA Project is showing me at a code level how VGA displays operate. Through the refresh rate of the screen, it is essentially fooling our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s subpixels RGB with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen to the end and returns to the start to repeat the process allowing us to see a complete image.
 
