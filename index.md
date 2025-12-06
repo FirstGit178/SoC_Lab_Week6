@@ -84,15 +84,37 @@ I decided to use the default section to colour the background and left my icon e
 
 ### **Code Adaptation**
 
-Adapting the code to display my design I thought at first would be easy................... 
+Adapting the code to display my designs at first I thought would be easy................... 
 # *Yeah, should be easy and I'll do something..... like my lecturer's binary rain* 
 <img src="docs/assets/images/DigitalRainDev1.png">
-but once I started I soon realised this is not the case, It is a big insentive to get the code correct before testing it on the board. Due to the delay when waiting for the program to generate the bitstream which must be done before testing the new code each time.
-many times I thought I had a design all figured out but when I programmed the board the result was not what I expected.
 
-but once I started I soon realised this is not the case, It is a big insentive to get the code correct before each test becomes a strong incentive to get the code right before trying it on the board. Many times I thought I had the design completely figured out, but when I programmed the board, the result was nothing like what I expected.
+but once I started I quickly realised it wasn’t. Because generating the bitstream takes time, every test requires patience, which makes it important to get the code right before attempting to program the board. Many times I thought I had solved the problem, only to find that the hardware produced something completely unexpected.
 
-# (Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.)
+I started with the supplied stripes template and modified it to show a different image. Instead of the original pattern, I split the screen into three vertical regions and used the column value (col) to switch between green, white, and orange. For each column, I set the RGB intensities, which kept the colours clean and consistent across the width of the screen.
+
+By adjusting the column ranges and their RGB values, the template now displays a simple tricolour flag rather than the default design. Working through this made it clear to me how the pixel-generation logic works — each pixel’s colour is determined by its position, so changing those ranges or intensity values immediately changes what appears on screen.
+
+if(col >= 11'd0 && col <11'd213) begin
+
+      red_next   <= 4'b0000;      
+      green_next <= 4'b1111;
+      blue_next  <= 4'b0000;
+      
+   end
+   
+   else if(col >= 11'd213 && col < 11'd426) begin
+   
+      red_next   <= 4'b1111;
+      green_next <= 4'b1111;
+      blue_next  <= 4'b1111;
+   end
+   
+   else if(col >= 11'd426 && col < 11'd640) begin
+   
+      red_next   <= 4'b1111;
+      green_next <= 4'b0111;
+      blue_next  <= 4'b0000;
+   end
 
 ### **Simulation**
 
