@@ -16,7 +16,7 @@ Older display technologies like CRTs took this even further, they literally scan
 
 For my FPGA VGA project, initially I set up the project with the downloaded template files which displayed colours cycling 
 
-# <"insert image/video"> (remove audio before adding) 
+# <"insert video"> (ColourCycling video, remove audio before adding) 
 
 and then progressed to the second step to display colour stripes through the VGA I added rows and coloumns to the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
 
@@ -43,7 +43,7 @@ The Verilog code templates are designed to generate visual patterns, including a
 
 One template produces a colour cycle wash, demonstrating how the pixel RGB values can be changed frame by frame and in turn the displayed colour changes. Other templates generate colours in horizontal rows and vertical columns. In each case the colour selection logic uses the pixel coordinates from the VGA controller to decide which colour to output, allowing simple patterns to be drawn without the need to store a full frame buffer.
 
-Because rather than presenting a complete image at once, VGA displays work by continuously scanning the screen, these templates rely on timing accurate signals rather than stored images. The monitor reconstructs the picture as the signal sweeps across the screen, the Verilog modules mimic this behaviour by producing the correct timing through VGA sync. 
+Rather than presenting a complete image at once, VGA displays work by continuously scanning the screen, these templates rely on timing accurate signals rather than stored images. The monitor reconstructs the picture as the signal sweeps across the screen, the Verilog modules mimic this behaviour by producing the correct timing through VGA sync. 
 
 # (add screenshots)
 
@@ -70,42 +70,50 @@ This demo displays the Irish Flag, which I selected as the design pattern.
 ### **Code Adaptation**
 Adapting the code to display my designs at first I thought would be easy... 
 
-*Yeah, should be easy and I'll do something like..... my lecturer's binary rain* 
+*Yeah, should be easy and I'll do something like..... my lecturer's binary rain...* 
 <img src="docs/assets/images/DigitalRainDev1.png">
 
-but once I started I quickly realised it wasn’t. Because generating the bitstream takes time, every test requires patience, which makes it important to get the code right before attempting to program the board. Many times I thought I had solved the problem, only to find that the hardware produced something completely unexpected.
+*...but once I started I quickly realised it wasn’t.* Because generating the bitstream takes time, every test requires patience, which makes it important to get the code right before attempting to program the board. Many times I thought I had solved the problem, only to find that the hardware produced something completely unexpected.
 
 I started with the supplied stripes template and modified it to show a different image. Instead of the original pattern, I split the screen into three vertical regions and used the column value (col) to switch between green, white, and orange. For each column, I set the RGB intensities, which kept the colours clean and consistent across the width of the screen.
 
 By adjusting the column ranges and their RGB values, the template now displays a simple tricolour flag rather than the default design. Working through this made it clear to me how the pixel-generation logic works — each pixel’s colour is determined by its position, so changing those ranges or intensity values immediately changes what appears on screen(see below).
 
-'if'
+Example of actual code used
 
-'(col >= 11'd0 && col <11'd213) begin'
+*`if`*
 
-     ' red_next   <= 4'b0000;'      
-      'green_next <= 4'b1111;
-     ' blue_next  <= 4'b0000;'
+*`(col >= 11'd0 && col <11'd213) begin`*
+
+  * 
+    *`red_next   <= 4'b0000;`*    
+    *`green_next <= 4'b1111;`*    
+    *`blue_next  <= 4'b0000;`*
       
-   'end'
+  *`end`*
    
-   'else if'
+  *`else if`*
    
-   '(col >= 11'd213 && col < 11'd426) begin'
+  *`(col >= 11'd213 && col < 11'd426) begin`*
+  
+   *
+     *`red_next   <= 4'b1111;`*     
+     *`green_next <= 4'b1111;`*     
+     *`blue_next  <= 4'b1111;`*
+     
+  *`end`*
    
-      'red_next   <= 4'b1111;'
-      'green_next <= 4'b1111;'
-      'blue_next  <= 4'b1111;'
-   'end'
+  *`else if`*
    
-   'else if'
-   
-   '(col >= 11'd426 && col < 11'd640) begin'
-   
-      'red_next   <= 4'b1111;'
-      'green_next <= 4'b0111;'
-      'blue_next  <= 4'b0000;'
-   'end'
+  *`(col >= 11'd426 && col < 11'd640) begin`*
+ 
+
+   *
+     *`red_next   <= 4'b1111;`*   
+     *`green_next <= 4'b0111;`*   
+     *`blue_next  <= 4'b0000;`*   
+     
+  *`end`*
 
 
 ### **Simulation**
@@ -117,10 +125,10 @@ By adjusting the column ranges and their RGB values, the template now displays a
 # (Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.)
 
 ### **Demonstration**
-<img src="docs/assets/images/LegoHead.jpg"> I didn't get my design finisherd but I learned quite a bit about how VGA actually works at a coding level.
+<img src="docs/assets/images/LegoHead.jpg"> I didn't get my design finished but I learned quite a bit about how VGA actually works at a coding level.
 
-I almost did though and if I had it would have looked something like this....
-<img src="docs/assets/images/LegoSmile.jpg">
+
+<img src="docs/assets/images/LegoSmile.jpg">I almost did though and if I had it would have looked something like this....
 
 
 
