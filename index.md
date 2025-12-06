@@ -24,17 +24,10 @@ and then progressed to the second step to display colour stripes through the VGA
 
 ## **Template VGA Design**
 ### **Project Set-Up**
-<img src="docs/assets/images/BASYS3.png">
+BASYS3 Develoment Board
+<img src="docs/assets/images/BASYS3.jpg">
 
 This FPGA VGA Project is showing me at a code level how VGA displays operate. Through the refresh rate of the screen, it is essentially fooling our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s subpixels RGB with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen to the end and returns to the start to repeat the process allowing us to see a complete image.
-
-# (Guideline 1 short paragraph.)
-
-
-**Architecture Diagram**
-
-<img src="docs/assets/images/ArchitectureDiagramFMC.png">
-
 
 
 **Architecture Diagram**
@@ -46,8 +39,6 @@ This FPGA VGA Project is showing me at a code level how VGA displays operate. Th
 
 
 ### **Template Code**
-# (Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs,CHECKED) 
-
 The Verilog code templates are designed to generate visual patterns, including a colour cycle screen wash, horizontal colour rows, and vertical columns. These signals follow the standard VGA timing scheme, which scans the screen left to right and top to bottom. The pixel coordinates are then passed to VGA Top, which determines what colour should be displayed at each point on the screen. 
 
 One template produces a colour cycle wash, demonstrating how the pixel RGB values can be changed frame by frame and in turn the displayed colour changes. Other templates generate colours in horizontal rows and vertical columns. In each case the colour selection logic uses the pixel coordinates from the VGA controller to decide which colour to output, allowing simple patterns to be drawn without the need to store a full frame buffer.
@@ -73,16 +64,10 @@ The implementation stage then places and routes the design, ensuring that the VG
 This demo displays the Irish Flag, which I selected as the design pattern. 
 <img src="docs/assets/images/IMG_20251110_171335.jpg">
 
-(Guideline: 1/2 sentences.)
-
 ## **My VGA Design Edit**
 # (Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).)
 
-As Ecah pixel has to be covered by code in regards to its colour and I was running behind with my progress due to missing a couple of labs 
-I decided to use the default section to colour the background and left my icon essentially floating in the centre of the screen, as whatever colour you decide to make the default, will colour any pixel not covered by the code. as this saved time rather than trying to write each section individually.
-
 ### **Code Adaptation**
-
 Adapting the code to display my designs at first I thought would be easy... 
 
 *Yeah, should be easy and I'll do something like..... my lecturer's binary rain* 
@@ -92,9 +77,11 @@ but once I started I quickly realised it wasn’t. Because generating the bitstr
 
 I started with the supplied stripes template and modified it to show a different image. Instead of the original pattern, I split the screen into three vertical regions and used the column value (col) to switch between green, white, and orange. For each column, I set the RGB intensities, which kept the colours clean and consistent across the width of the screen.
 
-By adjusting the column ranges and their RGB values, the template now displays a simple tricolour flag rather than the default design. Working through this made it clear to me how the pixel-generation logic works — each pixel’s colour is determined by its position, so changing those ranges or intensity values immediately changes what appears on screen.
+By adjusting the column ranges and their RGB values, the template now displays a simple tricolour flag rather than the default design. Working through this made it clear to me how the pixel-generation logic works — each pixel’s colour is determined by its position, so changing those ranges or intensity values immediately changes what appears on screen(see below).
 
-if(col >= 11'd0 && col <11'd213) begin
+if
+
+(col >= 11'd0 && col <11'd213) begin
 
       red_next   <= 4'b0000;      
       green_next <= 4'b1111;
@@ -102,14 +89,18 @@ if(col >= 11'd0 && col <11'd213) begin
       
    end
    
-   else if(col >= 11'd213 && col < 11'd426) begin
+   else if
+   
+   (col >= 11'd213 && col < 11'd426) begin
    
       red_next   <= 4'b1111;
       green_next <= 4'b1111;
       blue_next  <= 4'b1111;
    end
    
-   else if(col >= 11'd426 && col < 11'd640) begin
+   else if
+   
+   (col >= 11'd426 && col < 11'd640) begin
    
       red_next   <= 4'b1111;
       green_next <= 4'b0111;
@@ -127,6 +118,8 @@ if(col >= 11'd0 && col <11'd213) begin
 ### **Demonstration**
 <img src="docs/assets/images/LegoHead.jpg"> I didn't get my design finisherd but I learned quite a bit about how VGA actually works at a coding level.
 
+I almost did though and if I had it would have looked something like this
+<img src="docs/assets/images/LegoSmile.jpg">
 # (If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.)
 
 ##( **More Markdown Basics**)
