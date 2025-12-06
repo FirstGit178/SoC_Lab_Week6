@@ -30,7 +30,7 @@ BASYS3 Develoment Board
 This FPGA VGA Project is showing me at code level how VGA displays operate. Through the refresh rate of the screen, it is essentially tricks our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s subpixels red, green and blue(RGB) with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen to the end and returns to the start to repeat the process allowing us to see a complete image.
 
 
-**Architecture Diagram**
+**VGA Top Architecture Diagram**
 <img src="docs/assets/images/ArchitectureDiagram.png">
 
 **Project Summary window**
@@ -60,10 +60,6 @@ During synthesis, Vivado checks the design for timing constraints, optimises the
 
 The implementation stage then places and routes the design, ensuring that the VGA pixel clock and sync signal timing meet the required specifications. Once the design passes these checks, the bitstream is generated and programmed onto the FPGA board, where the VGA output can be tested in real time on the monitor. This process confirms that the simulated behaviour will be correctly displayed on the physical hardware.
 
-### **Demonstration**
-This demo displays the Irish Flag, which I selected as the design pattern. 
-<img src="docs/assets/images/IMG_20251110_171335.jpg">
-
 ## **My VGA Design Edit**
 # (Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).)
 
@@ -78,6 +74,11 @@ Adapting the code to display my designs at first I thought would be easy...
 I started with the supplied stripes template and modified it to show a different image. Instead of the original pattern, I split the screen into three vertical regions and used the column value (col) to switch between green, white, and orange. For each column, I set the RGB intensities, which kept the colours clean and consistent across the width of the screen.
 
 By adjusting the column ranges and their RGB values, the template now displays a simple tricolour flag rather than the default design. Working through this made it clear to me how the pixel-generation logic works — each pixel’s colour is determined by its position, so changing those ranges or intensity values immediately changes what appears on screen(see below).
+
+### **Demonstration**
+This demo displays the Irish Flag, which I selected as the design pattern. 
+<img src="docs/assets/images/IMG_20251110_171335.jpg">
+
 
 Example of actual code used
 
