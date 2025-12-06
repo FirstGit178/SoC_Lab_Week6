@@ -82,6 +82,8 @@ Following that I began to modifiy the supplied stripes template to show a differ
 <img src="docs/assets/images/Experimenting1.jpg">
 <img src="docs/assets/images/Experimenting2.jpg">
 <img src="docs/assets/images/Experimenting3.jpg">
+<img src="docs/assets/images/Stripes Orange.jpg">
+<img src="docs/assets/images/Stripes White Orange.jpg">
 
 
 
@@ -132,7 +134,8 @@ Example of actual code used
 
 
 ### **Simulation**
-
+<img src="docs/assets/images/HorizontalFlag.jpg">
+<img src="docs/assets/images/Understanding.jpg">
 
 # (Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.CHECKED)
 
