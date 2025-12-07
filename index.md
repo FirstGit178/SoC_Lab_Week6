@@ -102,10 +102,10 @@ Example of actual code used
 
 *`(col >= 11'd0 && col <11'd213) begin`*
 
-  * 
-    *`red_next   <= 4'b0000;`*    
-    *`green_next <= 4'b1111;`*    
-    *`blue_next  <= 4'b0000;`*
+ * 
+ *`red_next   <= 4'b0000;`*    
+ *`green_next <= 4'b1111;`*    
+ *`blue_next  <= 4'b0000;`*
       
   *`end`*
    
