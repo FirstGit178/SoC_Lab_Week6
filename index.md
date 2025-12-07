@@ -157,10 +157,12 @@ Example of actual code used
 
 
 ### *Final Design*
-<img src="docs/assets/images/LegoHead.jpg"> I didn't get my design finished but I learned quite a bit about how VGA actually works at a coding level.
+I didn't get my design finished but I learned quite a bit about how VGA actually works at a coding level.
+<img src="docs/assets/images/LegoHead.jpg"> 
 
 ### *The expected finished design*
-<img src="docs/assets/images/LegoSmile.jpg">I almost did though and if I had it would have looked something like this....
+I almost did though and if I had it would have looked something like this....
+<img src="docs/assets/images/LegoSmile.jpg">
 
 
 
@@ -176,6 +178,5 @@ A bullet list can be rendered as follows:
 - algorithms
 - iterators
 
-Images can be added by uploading them to the repository in a /docs/assets/images folder, and then rendering using HTML via githubusercontent.com as shown in the example below.
 
 
