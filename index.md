@@ -17,18 +17,19 @@ Older display technologies like CRTs took this even further, they literally scan
 
 ## *Project Set Up*
 
-## *BASYS3 Develoment Board*
+### *BASYS3 Develoment Board*
 <img src="docs/assets/images/BASYS3.jpg">
 
 This FPGA VGA Project is showing me at code level how VGA displays operate. Through the refresh rate of the screen, it is essentially tricks our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s subpixels red, green and blue(RGB) with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen to the end and returns to the start to repeat the process allowing us to see a complete image.
 
 
-## *VGA Top Architecture Diagram*
+### *VGA Top Architecture Diagram*
 <img src="docs/assets/images/ArchitectureDiagram.png">
 
-## *Project Summary window*
+### *Project Sources window*
 <img src="docs/assets/images/VGAPrjSrcsFMC.png">
 
+### *Project Summary window*
 <img src="docs/assets/images/VGAPrjSumFMC.png">
 
 ### *Template Code*
@@ -38,7 +39,9 @@ One template produces a colour cycle wash, demonstrating how the pixel RGB value
 
 Rather than presenting a complete image at once, VGA displays work by continuously scanning the screen, these templates rely on timing accurate signals rather than stored images. The monitor reconstructs the picture as the signal sweeps across the screen, the Verilog modules mimic this behaviour by producing the correct timing through VGA sync. 
 
-# (add screenshots)
+# (add screenshots) 
+
+
 
 ### **Simulation**
 Simulation is used to verify the VGA clock timing generator and colour pattern modules before programming the FPGA. The Verilog design is run in a waveform simulator, where the horizontal and vertical sync pulses, pixel coordinates, and colour outputs can be observed to see how they interact over time. This allows any timing errors or incorrect colour selection to be identified early, providing visual confirmation that the design follows the expected VGA timing sequence.
@@ -46,6 +49,16 @@ Simulation is used to verify the VGA clock timing generator and colour pattern m
 The simulation also demonstrates how the colour pattern logic responds to changing pixel coordinates, for example producing the colour cycle wash, or row and column based patterns. By displaying these signals in the waveform viewer, it would become clear that the modules generate valid RGB values throughout each frame, giving confidence that the design would operate correctly when synthesised. 
 
 Unfortunately, I was running behind with my progress due to missing a couple of labs, to try and save time I skipped straight to full implementation and programmed the board for testing. I used the default case to apply colour to any pixel not explicitly driven by the pattern logic, avoiding the need to manually define each region of the background. This allowed me to focus on colouring my icon in the centre of the screen.
+### *Project Source window with error*
+*As there was a fault in i_colour_stripes I can't show a functional simulation(see below in image)*
+<img src="docs/assets/images/Faulty src expanded.png">
+
+### *Rows Simulation Screenshot*
+*As I didn't run the simulation at the time, you can see it doesn't show any pulsing signals just solid lines* 
+<img src="docs/assets/images/Screenshot vivado simulation rows.png">
+
+### *Correct Rows Simulation Screenshot*
+# (add image)
 
 ### **Synthesis**
 Synthesis and implementation were performed using Vivado, where the Verilog code is changed into hardware logic and mapped onto the device. 
@@ -67,13 +80,13 @@ Adapting the code to display my designs at first I thought would be easy...
 
 For my FPGA VGA project, initially I set up the project with the downloaded template files which displayed colours cycling 
 
-# <"insert video"> (ColourCycling video, remove audio before adding) 
+# (insert ColourCycling video, remove audio before adding) 
 
 and then progressed to the second step to display colour stripes through the VGA I added rows and coloumns to the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
 
 <img src="docs/assets/images/VGACodeAlterationFMC.png">
 
-## *Stripes VGA Design*
+### *Stripes VGA Design*
 <img src="docs/assets/images/Stripes.jpg"> 
 
 Following that I began to modifiy the supplied stripes template to show a different image. Then I experimented until I got the colour I was looking for, 
@@ -91,7 +104,7 @@ then I split the screen into three vertical regions and used the column value (c
 
 By adjusting the column ranges and their RGB values, the template now displays a simple tricolour flag rather than the default design. Working through this made it clear to me how the pixel-generation logic works — each pixel’s colour is determined by its position, so changing those ranges or intensity values immediately changes what appears on screen(see below).
 
-### **Demonstration**
+### *Demonstration*
 This demo displays the Irish Flag, which I selected as the design pattern. 
 <img src="docs/assets/images/Flag.jpg">
 
@@ -133,12 +146,12 @@ Example of actual code used
   *`end`*
 
 
-### *Experimenting*
+## *Experimenting*
 
-## *Horizontal Flag*
+### *Horizontal Flag*
 <img src="docs/assets/images/HorizontalFlag.jpg">
 
-## *Understanding how it works*
+### *Understanding how it works*
 <img src="docs/assets/images/Understanding.jpg">
 
 
@@ -146,7 +159,7 @@ Example of actual code used
 ### *Final Design*
 <img src="docs/assets/images/LegoHead.jpg"> I didn't get my design finished but I learned quite a bit about how VGA actually works at a coding level.
 
-## *The expected finished design*
+### *The expected finished design*
 <img src="docs/assets/images/LegoSmile.jpg">I almost did though and if I had it would have looked something like this....
 
 
