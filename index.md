@@ -111,7 +111,7 @@ Example of actual code used
    
   *`else if`*
    
-  *`(col >= 11'd213 && col < 11'd426) begin`*
+*`(col >= 11'd213 && col < 11'd426) begin`*
   
    *
      *`red_next   <= 4'b1111;`*     
@@ -122,7 +122,7 @@ Example of actual code used
    
   *`else if`*
    
-  *`(col >= 11'd426 && col < 11'd640) begin`*
+*`(col >= 11'd426 && col < 11'd640) begin`*
  
 
    *
@@ -133,19 +133,20 @@ Example of actual code used
   *`end`*
 
 
-### **Simulation**
+### *Experimenting*
+
+## *Horizontal Flag*
 <img src="docs/assets/images/HorizontalFlag.jpg">
+
+## *Understanding how it works*
 <img src="docs/assets/images/Understanding.jpg">
 
-# (Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.CHECKED)
 
-### **Synthesis**
-# (Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.)
 
-### **Demonstration**
+### *Final Design*
 <img src="docs/assets/images/LegoHead.jpg"> I didn't get my design finished but I learned quite a bit about how VGA actually works at a coding level.
 
-
+## *The expected finished design*
 <img src="docs/assets/images/LegoSmile.jpg">I almost did though and if I had it would have looked something like this....
 
 
@@ -164,4 +165,4 @@ A bullet list can be rendered as follows:
 
 Images can be added by uploading them to the repository in a /docs/assets/images folder, and then rendering using HTML via githubusercontent.com as shown in the example below.
 
-<img src="https://github.com/FirstGit178/SoC_Lab_Week6/blob/8c119d26bccc3a40a8fc1c72d7f75620b280881b/docs/assets/images/VGAPrjSrcsFMC.png">
+<img src="docs/assets/images/VGAPrjSrcsFMC.png">
