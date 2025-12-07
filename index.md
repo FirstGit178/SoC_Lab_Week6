@@ -6,7 +6,7 @@ categories: demo
 ---
  
 # *The TV Screen LIES....!!!!*
-Okay maybe “lies” is a bit dramatic, but the screen does fool our brains. What we see as a complete stable image is really the result of thousands of pixels whose red, green, and blue sub-pixels change intensity every frame. As these rapid changes play out across the screen, our brains blend them into smooth motion and solid colors.
+Okay maybe “lies” is a bit dramatic, but the screen does fool our brains. What we see as a complete stable image is really the result of thousands of pixels whose red, green, and blue sub-pixels change intensity every frame. As these rapid changes play out across the screen, our brains blend them into smooth motion and solid colours.
 
 Older display technologies like CRTs took this even further, they literally scanned the image line by line from top to bottom, then jumps back to the start to repeat the process. Each pass built up the image so quickly that the way frames blur together made it appear continuous.
 
