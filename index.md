@@ -27,9 +27,9 @@ This FPGA VGA Project is showing me at code level how VGA displays operate. Thro
 <img src="docs/assets/images/ArchitectureDiagram.png">
 
 ## *Project Summary window*
+<img src="docs/assets/images/VGAPrjSrcsFMC.png">
+
 <img src="docs/assets/images/VGAPrjSumFMC.png">
-
-
 
 ### *Template Code*
 The Verilog code templates are designed to generate visual patterns, including a colour cycle screen wash, horizontal colour rows, and vertical columns. These signals follow the standard VGA timing scheme, which scans the screen left to right and top to bottom. The pixel coordinates are then passed to VGA Top, which determines what colour should be displayed at each point on the screen. 
@@ -165,4 +165,4 @@ A bullet list can be rendered as follows:
 
 Images can be added by uploading them to the repository in a /docs/assets/images folder, and then rendering using HTML via githubusercontent.com as shown in the example below.
 
-<img src="docs/assets/images/VGAPrjSrcsFMC.png">
+
