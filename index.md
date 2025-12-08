@@ -48,14 +48,18 @@ Simulation is used to verify the VGA clock timing generator and colour pattern m
 
 The simulation also demonstrates how the colour pattern logic responds to changing pixel coordinates, for example producing the colour cycle wash, or row and column based patterns. By displaying these signals in the waveform viewer, it would become clear that the modules generate valid RGB values throughout each frame, giving confidence that the design would operate correctly when synthesised. 
 
-Unfortunately, I was running behind with my progress due to missing a couple of labs, to try and save time I skipped straight to full implementation and programmed the board for testing. I used the default case to apply colour to any pixel not explicitly driven by the pattern logic, avoiding the need to manually define each region of the background. This allowed me to focus on colouring my icon in the centre of the screen.
-### *Project Source window with error*
-*As there was a fault in i_colour_stripes I can't show a functional simulation(see below in image)*
-<img src="docs/assets/images/Faulty src expanded.png">
+Unfortunately, I was running behind with my progress due to missing a couple of labs, so to try and save time I skipped straight to full implementation and programmed the board for testing. I used the default case to apply colour to any pixel not explicitly driven by the pattern logic, avoiding the need to manually define each region of the background. This allowed me to focus on colouring my icon in the centre of the screen.
 
 ### *Rows Simulation Screenshot*
-*As I didn't run the simulation at the time, you can see it doesn't show any pulsing signals just solid lines* 
+*Unfortunatley I didn't run the simulation at the time, as you can see it doesn't show any pulsing signals just solid lines* 
 <img src="docs/assets/images/Screenshot vivado simulation rows.png">
+
+### *Project Source window with error*
+*There was a fault in Simulation Sources/ Testbench/ i_colour_stripes : xil_defaultlib.ColourStripes this is why I can't show a functional simulation(see below in image)*
+
+<img src="docs/assets/images/Faulty src expanded.png">
+
+
 
 ### *Correct Rows Simulation Screenshot*
 # (add image)
