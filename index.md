@@ -121,7 +121,7 @@ This demo displays the Irish Flag, which I selected as the design pattern.
 <img src="docs/assets/images/Flag.jpg" title="Tricolour Flag Design">
 
 
-Example of actual code used
+(Example of actual code used)
 
 *`if`*
 
