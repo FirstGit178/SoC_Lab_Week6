@@ -1,9 +1,9 @@
 # Site settings
 title: System-on-Chip Design & Verification
 author:
-  name: Michelle Lynch
-  email: your-email@domain.com
-description: "A blog."
+  name: Fergal McNamara
+  email: g00180082@atu.ie
+description: "VGA Driver Design blog."
 
 # Build settings
 remote_theme: jekyll/minima
