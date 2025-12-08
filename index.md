@@ -18,19 +18,19 @@ Older display technologies like CRTs took this even further, they literally scan
 ## *Project Set Up*
 
 ### *BASYS3 Develoment Board*
-<img src="docs/assets/images/BASYS3.jpg">
+<img src="docs/assets/images/BASYS3.jpg" alt="BASYS3 Development Board">
 
 This FPGA VGA Project has shown me at code level how VGA displays operate. Through the refresh rate of the screen, it is essentially tricks our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s subpixels red, green and blue(RGB) with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen to the end allowing us to see a complete image and then returns to the start to repeat the process.
 
 
 ### *VGA Top Architecture Diagram*
-<img src="docs/assets/images/ArchitectureDiagram.png">
+<img src="docs/assets/images/ArchitectureDiagram.png" alt="Architecture Diagram">
 
 ### *Project Sources window*
-<img src="docs/assets/images/VGAPrjSrcsFMC.png">
+<img src="docs/assets/images/VGAPrjSrcsFMC.png" alt="VGA Project Sources">
 
 ### *Project Summary window*
-<img src="docs/assets/images/VGAPrjSumFMC.png">
+<img src="docs/assets/images/VGAPrjSumFMC.png" alt="VGA Project Summary">
 
 ### *Template Code*
 The Verilog code templates are designed to generate visual patterns, including a colour cycle screen wash, horizontal colour rows, and vertical columns. These signals follow the standard VGA timing scheme, which scans the screen left to right and top to bottom. The pixel coordinates are then passed to VGA Top, which determines what colour should be displayed at each point on the screen. 
@@ -52,15 +52,15 @@ Unfortunately, I was running behind with my progress due to missing a couple of 
 
 ### *Rows Simulation Screenshot*
 *Unfortunatley I didn't run the simulation at the time, as you can see it doesn't show any pulsing signals just solid lines* 
-<img src="docs/assets/images/Screenshot vivado simulation rows.png">
+<img src="docs/assets/images/Screenshot vivado simulation rows.png" alt="No Simulation output">
 
 ### *Screenshot Example of a Correct Rows Simulation*
-<img src="docs/assets/images/WorkingSim.JPG" width="100%">
+<img src="docs/assets/images/WorkingSim.JPG" width="100%" alt="Working Simulation output">
 
 ### *Project Source window with error*
 *There was a fault in Simulation Sources/ Testbench/ i_colour_stripes : xil_defaultlib.ColourStripes this is why I can't show a functional simulation(see below in image)*
 
-<img src="docs/assets/images/Faulty src expanded.png">
+<img src="docs/assets/images/Faulty src expanded.png" alt="Fault in Testbench">
 
 
 ### **Synthesis**
@@ -76,7 +76,7 @@ The implementation stage then places and routes the design, ensuring that the VG
 Adapting the code to display my designs at first I thought would be easy... 
 
 *Yeah, should be easy enough and I'll do something like..... my lecturer's binary rain...* 
-<img src="docs/assets/images/DigitalRainDev1.png">
+<img src="docs/assets/images/DigitalRainDev1.png" alt="Digital Rain">
 
 *...but once I started I quickly realised it wasn’t.* Because generating the bitstream takes time, every test requires patience, which makes it important to get the code right before attempting to program the board. Many times I thought I had solved the problem, only to find that the hardware produced something completely unexpected.
 
@@ -84,20 +84,20 @@ Adapting the code to display my designs at first I thought would be easy...
 For my FPGA VGA project, initially I set up the project with the downloaded template files which displayed colours cycling 
 
 ### *ColourCycling video link* 
-<img width="75" height="75" alt="ColourCycle.mp4" src="https://github.com/user-attachments/assets/65a5a67e-f309-44ed-9abe-8b4d74acd7c8" />
+<img width="75" height="75" alt="ColourCycle.mp4" src="https://github.com/user-attachments/assets/65a5a67e-f309-44ed-9abe-8b4d74acd7c8" alt="Colour Cycle.mp4 link"/>
 
 
 and then progressed to the second step to display colour stripes through the VGA I added rows and coloumns to the copied colourcycle Verilog code to create the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
 
-<img src="docs/assets/images/VGACodeAlterationFMC.png">
+<img src="docs/assets/images/VGACodeAlterationFMC.png" alt="VGA code alteration">
 
 ### *Stripes VGA Design*
-<img src="docs/assets/images/Stripes.jpg"> 
+<img src="docs/assets/images/Stripes.jpg" alt="Image of Stripes"> 
 
 Following that I began to modifiy the supplied stripes template to show a different image. Then I experimented until I got the colour I was looking for, 
 
 
-<img src="docs/assets/images/Experimenting1.jpg">
+<img src="docs/assets/images/Experimenting1.jpg" title="Experimenting with code to display different images">
 <img src="docs/assets/images/Experimenting2.jpg">
 <img src="docs/assets/images/Experimenting3.jpg">
 <img src="docs/assets/images/Stripes Orange.jpg">
