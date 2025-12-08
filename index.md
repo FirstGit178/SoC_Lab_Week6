@@ -94,13 +94,13 @@ and then progressed to the second step to display colour stripes through the VGA
 ### *Stripes VGA Design*
 <img src="docs/assets/images/Stripes.jpg" alt="Image of Stripes" title="Original stripes template"> 
 
-Following that I began to modifiy the supplied stripes template to show a different image. Then I experimented until I got the colour I was looking for, 
+Following that I began to modifiy the supplied stripes template to show a different image. Firstly I experimented until I got the colour I was looking for, 
 
 
-<img src="docs/assets/images/Experimenting1.jpg" title="Experimenting with the codes to display different colours">
-<img src="docs/assets/images/Experimenting2.jpg" title="Adjusting shades of colours">
-<img src="docs/assets/images/Experimenting3.jpg" title="Found the colour I was looking for">
-<img src="docs/assets/images/Stripes Orange.jpg" title="Enlarging the orange column">
+<img src="docs/assets/images/Experimenting1.jpg" title="Experimenting with the codes to display different colours" width="50%">
+<img src="docs/assets/images/Experimenting2.jpg" title="Adjusting shades of colours" width="50%">
+<img src="docs/assets/images/Experimenting3.jpg" title="Found the colour I was looking for" width="50%">
+<img src="docs/assets/images/Stripes Orange.jpg" title="Enlarging the orange column" width="50%">
 <img src="docs/assets/images/Stripes White Orange.jpg" title="Added the white column">
 
 
