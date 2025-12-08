@@ -64,7 +64,7 @@ Unfortunately, I was running behind with my progress due to missing a couple of 
 ### *Screenshot Example of a Correct Rows Simulation*
 <img src="docs/assets/images/WorkingSim.JPG" width="100%" alt="Working Simulation output">
 
-### *Project Source window with error*
+### *Expanded Project Source window with error*
 *There was a fault in Simulation Sources/ Testbench/ i_colour_stripes : xil_defaultlib.ColourStripes this is why I can't show a functional simulation(see below in image)*
 
 <img src="docs/assets/images/Faulty src expanded.png" alt="Fault in Testbench" title="**NOTE** The error in Testbench">
