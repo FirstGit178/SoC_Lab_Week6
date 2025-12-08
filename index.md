@@ -60,7 +60,7 @@ Unfortunately, I was running behind with my progress due to missing a couple of 
 ### *Project Source window with error*
 *There was a fault in Simulation Sources/ Testbench/ i_colour_stripes : xil_defaultlib.ColourStripes this is why I can't show a functional simulation(see below in image)*
 
-<img src="docs/assets/images/Faulty src expanded.png" alt="Fault in Testbench">
+<img src="docs/assets/images/Faulty src expanded.png" alt="Fault in Testbench" title="**NOTE** The error in Testbench">
 
 
 ### **Synthesis**
@@ -84,7 +84,7 @@ Adapting the code to display my designs at first I thought would be easy...
 For my FPGA VGA project, initially I set up the project with the downloaded template files which displayed colours cycling 
 
 ### *ColourCycling video link* 
-<img width="75" height="75" alt="ColourCycle.mp4" src="https://github.com/user-attachments/assets/65a5a67e-f309-44ed-9abe-8b4d74acd7c8" alt="Colour Cycle.mp4 link"/>
+<img width="75" height="75" alt="ColourCycle.mp4" src="https://github.com/user-attachments/assets/65a5a67e-f309-44ed-9abe-8b4d74acd7c8" alt="Colour Cycle.mp4 link" title="Colour cycle video link"/>
 
 
 and then progressed to the second step to display colour stripes through the VGA I added rows and coloumns to the copied colourcycle Verilog code to create the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
@@ -92,16 +92,16 @@ and then progressed to the second step to display colour stripes through the VGA
 <img src="docs/assets/images/VGACodeAlterationFMC.png" alt="VGA code alteration">
 
 ### *Stripes VGA Design*
-<img src="docs/assets/images/Stripes.jpg" alt="Image of Stripes"> 
+<img src="docs/assets/images/Stripes.jpg" alt="Image of Stripes" title="Original stripes template"> 
 
 Following that I began to modifiy the supplied stripes template to show a different image. Then I experimented until I got the colour I was looking for, 
 
 
-<img src="docs/assets/images/Experimenting1.jpg" title="Experimenting with code to display different images">
-<img src="docs/assets/images/Experimenting2.jpg">
-<img src="docs/assets/images/Experimenting3.jpg">
-<img src="docs/assets/images/Stripes Orange.jpg">
-<img src="docs/assets/images/Stripes White Orange.jpg">
+<img src="docs/assets/images/Experimenting1.jpg" title="Experimenting with the codes to display different colours">
+<img src="docs/assets/images/Experimenting2.jpg" title="Adjusting shades of colours">
+<img src="docs/assets/images/Experimenting3.jpg" title="Found the colour I was looking for">
+<img src="docs/assets/images/Stripes Orange.jpg" title="Enlarging the orange column">
+<img src="docs/assets/images/Stripes White Orange.jpg" title="Added white column">
 
 
 
@@ -111,7 +111,7 @@ By adjusting the column ranges and their RGB values, the template now displays a
 
 ### *Demonstration*
 This demo displays the Irish Flag, which I selected as the design pattern. 
-<img src="docs/assets/images/Flag.jpg">
+<img src="docs/assets/images/Flag.jpg" title="Tricolour Flag Design">
 
 
 Example of actual code used
@@ -154,34 +154,18 @@ Example of actual code used
 ## *Experimenting*
 
 ### *Horizontal Flag*
-<img src="docs/assets/images/HorizontalFlag.jpg">
+<img src="docs/assets/images/HorizontalFlag.jpg" title="Changed coloumns to rows">
 
 ### *Understanding how it works*
-<img src="docs/assets/images/Understanding.jpg">
+<img src="docs/assets/images/Understanding.jpg" title="Experimenting with shapes">
 
 
 
 ### *Final Design*
 I didn't get my design finished but I learned quite a bit about how VGA actually works at a coding level.
-<img src="docs/assets/images/LegoHead.jpg"> 
+<img src="docs/assets/images/LegoHead.jpg" title="My design was based on a Lego man's head"> 
 
 ### *The expected finished design*
 I almost did though and if I had it would have looked something like this....
-<img src="docs/assets/images/LegoSmile.jpg">
-
-
-
-
-
-
-
-
-Hyperlinks look like this: [GitHub Help](https://help.github.com/).
-
-A bullet list can be rendered as follows:
-- vectors
-- algorithms
-- iterators
-
-
+<img src="docs/assets/images/LegoSmile.jpg" title="I edited a screenshot to add the smile">
 
