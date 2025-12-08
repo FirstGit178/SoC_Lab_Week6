@@ -62,7 +62,7 @@ Unfortunately, I was running behind with my progress due to missing a couple of 
 
 
 ### *Correct Rows Simulation Screenshot*
-# (add image)
+<img src="docs/assets/images/WorkinSim.png">
 
 ### **Synthesis**
 Synthesis and implementation were performed using Vivado, where the Verilog code is changed into hardware logic and mapped onto the device. 
