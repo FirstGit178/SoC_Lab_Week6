@@ -20,7 +20,7 @@ Older display technologies like CRTs took this even further, they literally scan
 ### *BASYS3 Develoment Board*
 <img src="docs/assets/images/BASYS3.jpg">
 
-This FPGA VGA Project has shown me at code level how VGA displays operate. Through the refresh rate of the screen, it is essentially tricks our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s subpixels red, green and blue(RGB) with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen to the end and returns to the start to repeat the process allowing us to see a complete image.
+This FPGA VGA Project has shown me at code level how VGA displays operate. Through the refresh rate of the screen, it is essentially tricks our brains into thinking we see a complete image when actually we are watching a trace of each pixel’s subpixels red, green and blue(RGB) with intensities that change per frame to generate varying colours which then as the trace makes its way across and down the screen to the end allowing us to see a complete image and then returns to the start to repeat the process.
 
 
 ### *VGA Top Architecture Diagram*
@@ -37,7 +37,7 @@ The Verilog code templates are designed to generate visual patterns, including a
 
 One template produces a colour cycle wash, demonstrating how the pixel RGB values can be changed frame by frame and in turn the displayed colour changes. Other templates generate colours in horizontal rows and vertical columns. In each case the colour selection logic uses the pixel coordinates from the VGA controller to decide which colour to output, allowing simple patterns to be drawn without the need to store a full frame buffer.
 
-Rather than presenting a complete image at once, VGA displays work by continuously scanning the screen, these templates rely on timing accurate signals rather than stored images. The monitor reconstructs the picture as the signal sweeps across the screen, the Verilog modules mimic this behaviour by producing the correct timing through VGA sync. 
+Rather than presenting a complete image at once, VGA displays work by continuously scanning the screen, these templates rely on timing accurate signals rather than stored images. The Verilog modules recreate VGA behaviour by generating the correct HSYNC and VSYNC timing signals, including the active video period, front porch, sync pulse, and back porch. Together these timings tell the monitor exactly when to draw pixels, move to the next line, and start a new frame.
 
 # (add screenshots) 
 
