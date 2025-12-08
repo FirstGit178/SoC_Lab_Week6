@@ -54,8 +54,8 @@ Unfortunately, I was running behind with my progress due to missing a couple of 
 *Unfortunatley I didn't run the simulation at the time, as you can see it doesn't show any pulsing signals just solid lines* 
 <img src="docs/assets/images/Screenshot vivado simulation rows.png">
 
-### *Correct Rows Simulation Screenshot*
-<img src="docs/assets/images/WorkingSim.JPG">
+### *Screenshot Example of a Correct Rows Simulation*
+<img src="docs/assets/images/WorkingSim.JPG" width="100%">
 
 ### *Project Source window with error*
 *There was a fault in Simulation Sources/ Testbench/ i_colour_stripes : xil_defaultlib.ColourStripes this is why I can't show a functional simulation(see below in image)*
@@ -83,7 +83,9 @@ Adapting the code to display my designs at first I thought would be easy...
 
 For my FPGA VGA project, initially I set up the project with the downloaded template files which displayed colours cycling 
 
-# (insert ColourCycling video, remove audio before adding) 
+### *ColourCycling video link* 
+<img width="75" height="75" alt="ColourCycle.mp4" src="https://github.com/user-attachments/assets/65a5a67e-f309-44ed-9abe-8b4d74acd7c8" />
+
 
 and then progressed to the second step to display colour stripes through the VGA I added rows and coloumns to the copied colourcycle Verilog code to create the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
 
