@@ -169,3 +169,5 @@ I didn't get my design finished but I learned quite a bit about how VGA actually
 I almost did though and if I had it would have looked something like this....
 <img src="docs/assets/images/LegoSmile.jpg" title="I edited a screenshot to add the smile">
 
+
+### *Refernces*
