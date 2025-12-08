@@ -99,9 +99,6 @@ Following that I began to modifiy the supplied stripes template to show a differ
 <div style="display:flex; justify-content:center; gap:20px;">
 <img src="docs/assets/images/Experimenting1.jpg" width="45%" title="Experimenting with the codes to display different colours">
 <img src="docs/assets/images/Experimenting2.jpg" width="45%" title="Adjusting shades of colours" width="40%">
-</div>
-
-<div style="display:flex; justify-content:center; gap:20px; margin-top:20px;">
 <img src="docs/assets/images/Experimenting3.jpg" width="45%" title="Found the colour I was looking for" width="40%">
 <img src="docs/assets/images/Stripes Orange.jpg" width="45%" title="Enlarging the orange column" width="40%">
 <img src="docs/assets/images/Stripes White Orange.jpg" title="Added the white column">
