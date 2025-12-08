@@ -87,7 +87,8 @@ For my FPGA VGA project, initially I set up the project with the downloaded temp
 <img width="75" height="75" alt="ColourCycle.mp4" src="https://github.com/user-attachments/assets/65a5a67e-f309-44ed-9abe-8b4d74acd7c8" alt="Colour Cycle.mp4 link" title="Colour cycle video link"/>
 
 
-and then progressed to the second step to display colour stripes through the VGA I added rows and coloumns to the copied colourcycle Verilog code to create the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
+and then progressed to the second step 
+to display colour stripes through the VGA I added rows and coloumns to the copied colourcycle Verilog code to create the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
 
 <img src="docs/assets/images/VGACodeAlterationFMC.png" alt="VGA code alteration">
 
