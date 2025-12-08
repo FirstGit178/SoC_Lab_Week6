@@ -85,9 +85,8 @@ For my FPGA VGA project, initially I set up the project with the downloaded temp
 
 
 and then progressed to the second step 
-to display colour stripes through the VGA I added rows and coloumns to the copied colourcycle Verilog code to create the stripes Verilog code, 
-
-(see below updated code) *`.row(row), .col(col)`*
+to display colour stripes through the VGA I added rows and coloumns *`.row(row), .col(col)`* to the copied colourcycle Verilog code to create the stripes Verilog code, 
+(see below updated code) 
 
 <img src="docs/assets/images/VGACodeAlterationFMC.png" alt="VGA code alteration">
 
