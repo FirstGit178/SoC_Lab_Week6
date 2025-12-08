@@ -85,7 +85,7 @@ For my FPGA VGA project, initially I set up the project with the downloaded temp
 
 # (insert ColourCycling video, remove audio before adding) 
 
-and then progressed to the second step to display colour stripes through the VGA I added rows and coloumns to the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
+and then progressed to the second step to display colour stripes through the VGA I added rows and coloumns to the copied colourcycle Verilog code to create the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
 
 <img src="docs/assets/images/VGACodeAlterationFMC.png">
 
