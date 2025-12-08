@@ -96,13 +96,13 @@ and then progressed to the second step to display colour stripes through the VGA
 
 Following that I began to modifiy the supplied stripes template to show a different image. Firstly I experimented until I got the colour I was looking for, 
 
-
+<div style="display:flex; gap:10px;">
 <img src="docs/assets/images/Experimenting1.jpg" width="45%" title="Experimenting with the codes to display different colours">
 <img src="docs/assets/images/Experimenting2.jpg" width="45%" title="Adjusting shades of colours" width="40%">
 <img src="docs/assets/images/Experimenting3.jpg" width="45%" title="Found the colour I was looking for" width="40%">
 <img src="docs/assets/images/Stripes Orange.jpg" width="45%" title="Enlarging the orange column" width="40%">
 <img src="docs/assets/images/Stripes White Orange.jpg" title="Added the white column">
-
+</div>
 
 
 then I split the screen into three vertical regions and used the column value (col) to switch between green, white, and orange. For each column, I set the RGB intensities, which kept the colours clean and consistent across the width of the screen.
