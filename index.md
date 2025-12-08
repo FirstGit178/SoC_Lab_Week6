@@ -32,7 +32,7 @@ This FPGA VGA Project has shown me at code level how VGA displays operate. Throu
 ### *Project Summary window*
 <img src="docs/assets/images/VGAPrjSumFMC.png" alt="VGA Project Summary">
 
-### *Template Code*
+### *Provided Template Code*
 The Verilog code templates are designed to generate visual patterns, including a colour cycle screen wash, horizontal colour rows, and vertical columns. These signals follow the standard VGA timing scheme, which scans the screen left to right and top to bottom. The pixel coordinates are then passed to VGA Top, which determines what colour should be displayed at each point on the screen. 
 
 One template produces a colour cycle wash, demonstrating how the pixel RGB values can be changed frame by frame and in turn the displayed colour changes. Other templates generate colours in horizontal rows and vertical columns. In each case the colour selection logic uses the pixel coordinates from the VGA controller to decide which colour to output, allowing simple patterns to be drawn without the need to store a full frame buffer.
