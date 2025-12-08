@@ -97,10 +97,10 @@ to display colour stripes through the VGA I added rows and coloumns *`.row(row),
 Following that I began to modifiy the supplied stripes template to show a different image. Firstly I experimented until I got the colour I was looking for, 
 
 <div style="display:flex; justify-content:center; gap:20px;">
-<img src="docs/assets/images/Experimenting1.jpg" width="45%" title="Experimenting with the codes to display different colours">
-<img src="docs/assets/images/Experimenting2.jpg" width="45%" title="Adjusting shades of colours" width="40%">
-<img src="docs/assets/images/Experimenting3.jpg" width="45%" title="Found the colour I was looking for" width="40%">
-<img src="docs/assets/images/Stripes Orange.jpg" width="45%" title="Enlarging the orange column" width="40%">
+<img src="docs/assets/images/Experimenting1.jpg" style="width:45%;" title="Experimenting with the codes to display different colours">
+<img src="docs/assets/images/Experimenting2.jpg" style="width:45%;" title="Adjusting shades of colours">
+<img src="docs/assets/images/Experimenting3.jpg" style="width:45%;" title="Found the colour I was looking for">
+<img src="docs/assets/images/Stripes Orange.jpg" style="width:45%;" title="Enlarging the orange column">
 <img src="docs/assets/images/Stripes White Orange.jpg" title="Added the white column">
 </div>
 
