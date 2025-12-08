@@ -171,4 +171,4 @@ I almost did though and if I had it would have looked something like this....
 
 
 ### *References*
-[Chat GPT] (https://chatgpt.com/)
+[Chat GPT](https://chatgpt.com/)
