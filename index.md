@@ -69,9 +69,6 @@ During synthesis, Vivado checks the design for timing constraints, optimises the
 
 The implementation stage then places and routes the design, ensuring that the VGA pixel clock and sync signal timing meet the required specifications. Once the design passes these checks, the bitstream is generated and programmed onto the FPGA board, where the VGA output can be tested in real time on the monitor. This process confirms that the simulated behaviour will be correctly displayed on the physical hardware.
 
-## **My VGA Design Edit**
-# (Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).)
-
 ### **Code Adaptation**
 Adapting the code to display my designs at first I thought would be easy... 
 
@@ -88,7 +85,9 @@ For my FPGA VGA project, initially I set up the project with the downloaded temp
 
 
 and then progressed to the second step 
-to display colour stripes through the VGA I added rows and coloumns to the copied colourcycle Verilog code to create the stripes Verilog code, see below updated code *`.row(row), .col(col)`*
+to display colour stripes through the VGA I added rows and coloumns to the copied colourcycle Verilog code to create the stripes Verilog code, 
+
+(see below updated code) *`.row(row), .col(col)`*
 
 <img src="docs/assets/images/VGACodeAlterationFMC.png" alt="VGA code alteration">
 
