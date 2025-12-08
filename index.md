@@ -39,8 +39,12 @@ One template produces a colour cycle wash, demonstrating how the pixel RGB value
 
 Rather than presenting a complete image at once, VGA displays work by continuously scanning the screen, these templates rely on timing accurate signals rather than stored images. The Verilog modules recreate VGA behaviour by generating the correct HSYNC and VSYNC timing signals, including the active video period, front porch, sync pulse, and back porch. Together these timings tell the monitor exactly when to draw pixels, move to the next line, and start a new frame.
 
-# (add screenshots) 
+### *Screenshots of provided code*
 
+<img src="docs/assets/images/Sample of Testbench Code.JPG" title="Sample of Testbench code">
+<img src="docs/assets/images/Sample VGASync code.JPG" title="Sample of VGA Sync code">
+<img src="docs/assets/images/Sample Colour Cycle cases.JPG" title="Sample of Colour Cycle cases code">
+<img src="docs/assets/images/VGA Top code.JPG" title="VGA Top code">
 
 
 ### **Simulation**
