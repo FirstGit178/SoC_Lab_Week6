@@ -42,8 +42,11 @@ Rather than presenting a complete image at once, VGA displays work by continuous
 ### *Screenshots of provided code*
 
 <img src="docs/assets/images/Sample of Testbench Code.JPG" title="Sample of Testbench code">
+
 <img src="docs/assets/images/Sample VGASync code.JPG" title="Sample of VGA Sync code">
+
 <img src="docs/assets/images/Sample Colour Cycle cases.JPG" title="Sample of Colour Cycle cases code">
+
 <img src="docs/assets/images/VGA Top code.JPG" title="VGA Top code">
 
 
