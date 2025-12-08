@@ -101,7 +101,7 @@ Following that I began to modifiy the supplied stripes template to show a differ
 <img src="docs/assets/images/Experimenting2.jpg" title="Adjusting shades of colours">
 <img src="docs/assets/images/Experimenting3.jpg" title="Found the colour I was looking for">
 <img src="docs/assets/images/Stripes Orange.jpg" title="Enlarging the orange column">
-<img src="docs/assets/images/Stripes White Orange.jpg" title="Added white column">
+<img src="docs/assets/images/Stripes White Orange.jpg" title="Added the white column">
 
 
 
