@@ -54,15 +54,14 @@ Unfortunately, I was running behind with my progress due to missing a couple of 
 *Unfortunatley I didn't run the simulation at the time, as you can see it doesn't show any pulsing signals just solid lines* 
 <img src="docs/assets/images/Screenshot vivado simulation rows.png">
 
+### *Correct Rows Simulation Screenshot*
+<img src="docs/assets/images/WorkingSim.JPG">
+
 ### *Project Source window with error*
 *There was a fault in Simulation Sources/ Testbench/ i_colour_stripes : xil_defaultlib.ColourStripes this is why I can't show a functional simulation(see below in image)*
 
 <img src="docs/assets/images/Faulty src expanded.png">
 
-
-
-### *Correct Rows Simulation Screenshot*
-<img src="docs/assets/images/WorkingSim.jpg">
 
 ### **Synthesis**
 Synthesis and implementation were performed using Vivado, where the Verilog code is changed into hardware logic and mapped onto the device. 
@@ -76,7 +75,7 @@ The implementation stage then places and routes the design, ensuring that the VG
 ### **Code Adaptation**
 Adapting the code to display my designs at first I thought would be easy... 
 
-*Yeah, should be easy and I'll do something like..... my lecturer's binary rain...* 
+*Yeah, should be easy enough and I'll do something like..... my lecturer's binary rain...* 
 <img src="docs/assets/images/DigitalRainDev1.png">
 
 *...but once I started I quickly realised it wasn’t.* Because generating the bitstream takes time, every test requires patience, which makes it important to get the code right before attempting to program the board. Many times I thought I had solved the problem, only to find that the hardware produced something completely unexpected.
